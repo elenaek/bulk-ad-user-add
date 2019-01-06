@@ -10,9 +10,7 @@ catch{}
 
 Foreach ($user in $importCsv) {
     $addUserJob = Start-Job -ArgumentList $user, $logPath, $domain -ScriptBlock {
-        $user = $args[0]
-        $logPath = $args[1]
-        $domain = $args[2]
+        $user, $logPath, $domain = $args
         $fullName = $user.first_name + " " + $user.last_name
         $formattedName = $user.username + "@$domain"
         try{
