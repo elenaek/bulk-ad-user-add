@@ -12,9 +12,9 @@
 5. Profit!
 
 ## Spreadsheet format and what each column means
-| first_name | last_name | username | password | ou | groups |
-| ------ | ------ | ------ | ------ | ------ | ------ |
-| User's first name | User's last name | user's intended username | user's password | the DN of the OU to create the user on | group names separated by commas, to add the user to |
+| first_name | last_name | username | password | ou | groups | temp_pw |
+| ------ | ------ | ------ | ------ | ------ | ------ | ------ |
+| User's first name | User's last name | user's intended username | user's password | the DN of the OU to create the user on | group names separated by commas, to add the user to | Change pw on next logon?(TRUE/FALSE)
 
 ## Automatically Generating Username based on First/Last Names
 
